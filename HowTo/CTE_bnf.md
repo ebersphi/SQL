@@ -2,9 +2,9 @@
 
 cte-table-definition ::= `cte-name` \[ ( `column-names` ) ] AS ( `SELECT-expr` ) ;;
 
-cte-recursive-definition ::=  `cte-name` \[ ( `column-names` )  AS ( `initial-select` UNION ALL `SELECT-expr` ) ;;
+cte-recursive-definition ::=  { RECURSIVE<sup>4</sup> } `cte-name` \[ ( `column-names` )  AS ( `initial-select` UNION ALL `SELECT-expr` ) ;;
 
-cte-declaration ::=  WITH  { `cte-table-definition` | `cte-recursive-definition` } \[ , ... ] `dml-expression` ;;
+cte-declaration ::=  WITH  { `cte-table-definition` |  `cte-recursive-definition` } \[ , ... ] `dml-expression` ;;
 
 cte-name ::= `sql-identifier` ;;
 
@@ -14,8 +14,13 @@ dml-expression ::=  `SELECT-expr` |  `UPDATE-expr` |  `MERGE-expr` | `INSERT-exp
 
 initial-select ::= `SELECT-expr` ::
 
-select-expr ::= SELECT `select-clause` \[  \[<sup>1</sup> 
-FROM `from-clause` ] \[ WHERE `where-clause>` ] \[ <sup>2</sup> GROUP BY `group-by-clause` ] [ HAVING `having-clause`] [<sup>3</sup> ORDER BY `order-by-clause` ] ] ;;
+select-expr ::= SELECT `select-clause` \[  
+\[ FROM<sup>1</sup> `from-clause` ] 
+\[ WHERE `where-clause>` ] 
+\[  GROUP BY<sup>2</sup> `group-by-clause` ] 
+\[ HAVING `having-clause`] 
+\[ ORDER BY<sup>3</sup> `order-by-clause` ] 
+    ] ;;
 
 
 NOTES<br>
@@ -25,6 +30,9 @@ NOTES<br>
 
   <sup>3</sup> ORDER BY cannot appear in subqueries for MSSQL<br>
   <sup>3</sup> ORDER BY is ignored by PostgreSQL 
+
+  <sup>4</sup> The RECURSIVE keyword is mandatorily specific to PostgreSQL<br>
+  <sup>4</sup> The RECURSIVE keyword is not used by any other database vendor
 
 ## cte-table-definition 
 
