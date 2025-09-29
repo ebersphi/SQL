@@ -1,3 +1,5 @@
+Norme	Document	Data types	Structure	Operators	Selection	DML	DDL
+<img width="32766" height="21" alt="image" src="https://github.com/user-attachments/assets/eeacb27d-dbbb-4642-a799-c7ca40ca0d51" />
 
 "SQL-86 / SQL-89
 ANSI:1986
