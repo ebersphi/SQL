@@ -27,30 +27,30 @@ MSSQL : `ORDER BY clause` ::= ORDER BY order_by_expression [ COLLATE collation_n
 MSSQL : `ROW or RANGE clause` ::=  { ROWS | RANGE } `window frame extent` ;;
 
 MSSQL : `window frame extent` ::=  \
-{   `window frame preceding` \
-  | `window frame between` \
-} ;;
+$~~${   `window frame preceding` \
+$~~~~$  | `window frame between` \
+$~~$} ;;
 
 MSSQL : `window frame between` ::= \
   BETWEEN `window frame bound` AND `Window frame bound` ;;
 
 MSSQL : `window frame bound` ::= \
-{   `window frame preceding` \
-  | `window frame following` \
-} ;;
+$~~$ {   `window frame preceding` \
+$~~~~$  | `window frame following` \
+$~~$} ;;
 
 MSSQL : `window frame preceding` ::= \
-{\
-    UNBOUNDED PRECEDING\
-  | `unsigned_value_specification` PRECEDING\
-  | CURRENT ROW\
-} ;;
+$~~${\
+$~~~~$    UNBOUNDED PRECEDING\
+$~~~~$ | `unsigned_value_specification` PRECEDING\
+$~~~~$ | CURRENT ROW\
+$~~$} ;;
 
 MSSQL : `window frame following` ::=\
 {\
-    UNBOUNDED FOLLOWING\
-  | `unsigned_value_specification` FOLLOWING\
-  | CURRENT ROW\
+$~~$    UNBOUNDED FOLLOWING\
+$~~$  | `unsigned_value_specification` FOLLOWING\
+$~~$  | CURRENT ROW\
 } ;;
 
 MSSQL : `unsigned value specification` ::= {  `unsigned integer literal` } ;;
