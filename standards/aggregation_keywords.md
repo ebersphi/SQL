@@ -28,8 +28,8 @@ MSSQL : `ROW or RANGE clause` ::=  { ROWS | RANGE } `window frame extent` ;;
 
 MSSQL : `window frame extent` ::=  \
 &emsp;{   `window frame preceding` \
-&emsp;&emsp;  | `window frame between` \
-&emsp; ;;
+&emsp;| `window frame between` \
+&emsp;};;
 
 MSSQL : `window frame between` ::= \
   BETWEEN `window frame bound` AND `Window frame bound` ;;
