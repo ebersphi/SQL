@@ -26,15 +26,15 @@ join-clause ::= <table-expr> <JOIN-keyword> <table-expr> [ ON <join-predicates> 
 <table>
 <tr><th>Join type</th><th>JOIN-keyword</th><th> Operation</th></tr>
 <tr><td>Inner join </td><td> [INNER] JOIN </td><td> get all rows from 2 table-expr matching the join-predicates </td></tr>
-<tr><td>Outer join</td><td colspan=2>get all rows from 2 table-expr matching the join-predicates, plus the non matching rows from </td></tr>
-<tr><td></td><td>
-<li>LEFT [OUTER] JOIN</li>
-<li>RIGHT [OUTER] JOIN</li>
-<li>FULL [OUTER] JOIN</li></td>
+<tr><td rowspan=2>Outer join</td><td colspan=2>get all rows from 2 table-expr matching the join-predicates, plus the non matching rows from </td></tr>
+<tr><td>
+   <li>LEFT [OUTER] JOIN</li>
+   <li>RIGHT [OUTER] JOIN</li>
+   <li>FULL [OUTER] JOIN</li></td>
 <td>
-<li>the first &lt;table-expr&gt; (LEFT)</li>
-<li>the second &lt;table-expr&gt; (RIGHT)</li>
-<li>both &lt;table-expr&gt;</li>
+   <li>the first &lt;table-expr&gt; (LEFT)</li>
+   <li>the second &lt;table-expr&gt; (RIGHT)</li>
+   <li>both &lt;table-expr&gt;</li>
 </td></tr>
 <tr><td> Natural join</td><td>NATURAL</td><td>No join-predicates are allowed,
 <br> an equi-join is done for all
