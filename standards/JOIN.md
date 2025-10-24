@@ -13,8 +13,8 @@ NATURAL JOIN
 | CROSS JOIN | SQL-92 | V9 |  V10 | V1 | 7.0 (1998) | V4 | V5 | V6 | V7 |
 | NATURAL \[JOIN] | SQL:1999 | N.S. | N.S. | V1 | N.S. | 5.0.12 (2005) | V5 | V6 | 9i (2011) |
 | LATERAL | SQL:2011 | TABLE<sup>1</sup> | V6<sup>1</sup> (1998)  | 1.4.200 (2016) | N.S. | 8.0.14 (2018) | 10.3.3 (2018) | 8.0.10 (2018) | 12c (2013) |
-| CROSS APPLY | N.S. | N.S. | N.S. | 9.0 (2005) | N.S. | N.S. | N.S. | N.S. | 12c (2013) |
-| OUTER APPLY | N.S. | N.S. | N.S. | 9.0 (2005) | N.S. | N.S. | N.S. | N.S. | 12c (2013) |
+| CROSS APPLY | N.S. | N.S. | N.S. | N.S. | 9.0 (2005) | N.S. | N.S. | N.S. | 12c (2013) |
+| OUTER APPLY | N.S. | N.S. | N.S. | N.S. | 9.0 (2005) | N.S. | N.S. | N.S. | 12c (2013) |
 
 <sup>1</sup> LATERAL is synonym for TABLE keyword. DB z/OS only supports TABLE keyword.
 N.S. Not Supported
