@@ -6,6 +6,7 @@
 |:---|:---|:---|:---|:---|:---|:---|:---|
 |SQL-86 / SQL-89<br>ANSI:1986<br>ISO:1987|	SQL1	|NUMERIC<br> DECIMAL<br> INTEGER<br> SMALLINT<br> FLOAT<br> REAL<br> "DOUBLE PRECISION"|||SELECT<br>FROM<br>WHERE<br>"GROUP BY"<br>HAVING<br>"ORDER BY"	|INSERT<br>UPDATE<br>DELETE	|CREATE TABLE<br>CREATE VIEW|
 |SQL-92|	SQL2|	date<br> time <br>timestamp<br> interval<br> bit<br> varchar<br> "national character"|	SCHEMA<br>"isolations transactionelles"|CAST<br>"CASE WHEN"|	"\[ INNER<br> \|LEFT<br> \|RIGHT<br> \|FULL<br> \|NATURAL<br> \|CROSS ] <br>&nbsp; JOIN"<br>UNION<br>INTERSECT<br>EXCEPT	||ALTER TABLE<br>DROP TABLE<br>ALTER VIEW|
+
 SQL :1999	SQL3	LOB CLOB	OLAP		"ROLLUP
 CUBE
 GROUPING SETS
