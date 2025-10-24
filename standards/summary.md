@@ -1,26 +1,11 @@
-"Norme"	"Document"	"Data types"	"Structure"	"Operators"	"Selection"	"DML"	"DDL"
 <img width="32766" height="21" alt="image" src="https://github.com/user-attachments/assets/eeacb27d-dbbb-4642-a799-c7ca40ca0d51" />
 
-"SQL-86 / SQL-89
-ANSI:1986
-ISO:1987"	SQL1	"NUMERIC DECIMAL INTEGER SMALLINT FLOAT REAL 
-""DOUBLE PRECISION"""			"SELECT
-FROM
-WHERE
-GROUP BY
-HAVING
-ORDER BY"	"INSERT
-UPDATE
-DELETE"	"CREATE TABLE
-CREATE VIEW"
-SQL-92	SQL2	"date time timestamp interval bit varchar 
-""national character"""	"SCHEMA
-isolations transactionelles"	"CAST
-CASE WHEN"	[ INNER |LEFT |RIGHT |FULL |NATURAL |CROSS ] JOIN	"UNION
-INTERSECT
-EXCEPT"	"ALTER TABLE
-DROP TABLE
-ALTER VIEW"
+## Chronologic introduction of SQL features
+
+|Norme |Document|Data types|Structure|Operators|Selection|DML|DDL|
+|:---|:---|:---|:---|:---|:---|:---|:---|
+|SQL-86 / SQL-89<br>ANSI:1986<br>ISO:1987|	SQL1	|NUMERIC<br> DECIMAL<br> INTEGER<br> SMALLINT<br> FLOAT<br> REAL<br> "DOUBLE PRECISION"|||SELECT<br>FROM<br>WHERE<br>"GROUP BY"<br>HAVING<br>"ORDER BY"	|INSERT<br>UPDATE<br>DELETE	|CREATE TABLE<br>CREATE VIEW|
+|SQL-92|	SQL2|	date<br> time <br>timestamp<br> interval<br> bit<br> varchar<br> "national character"|	SCHEMA<br>"isolations transactionelles"|CAST<br>"CASE WHEN"|	"\[ INNER<br> \|LEFT<br> \|RIGHT<br> \|FULL<br> \|NATURAL<br> \|CROSS ] <br>&nbsp; JOIN"<br>UNION<br>INTERSECT<br>EXCEPT	||ALTER TABLE<br>DROP TABLE<br>ALTER VIEW|
 SQL :1999	SQL3	LOB CLOB	OLAP		"ROLLUP
 CUBE
 GROUPING SETS
