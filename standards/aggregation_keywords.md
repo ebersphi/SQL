@@ -1,13 +1,20 @@
 
 
-| Standard | Feature | Keyword | Implementation | MSSQL | Oracle | PGSQL | MySql | MariaDb |
+
+
+| Standard | Feature ID | Keyword | Implementation | MSSQL | Oracle | PGSQL | MySql | MariaDb |
 | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
 | |   | APPROX_COUNT_DISTINCT | approx_count_distinct(expression) -> bigint  | 2019 |  |  |  |  |
-| SQL:1999 | 7.10.4 | GROUPING | grouping( <column_expression> ) -> 0 ou 1 | 2000 |
-| SQL:2003 | F.2.14 | GROUPING_ID | grouping_id(<column_expression> [ , ...n ] ) -> int | 2000 |
-| SQL:2003 | 10.9  | OVER | OVER ( [ `PARTITION BY clause` ] [ `ORDER BY clause` ] [ `ROW or RANGE clause` ] ) | 2000 |
-| SQL:2003 | 10.9.6  | UNBOUNDED | window frame specification | 
+| SQL:1999 | T431 | GROUPING | grouping( <column_expression> ) -> 0 ou 1 | 2000 |
+| SQL:2003 | T491 | GROUPING_ID | grouping_id(<column_expression> [ , ...n ] ) -> int | 2000 |
+| SQL:2003 | T611 | OVER | OVER ( [ `PARTITION BY clause` ] [ `ORDER BY clause` ] [ `ROW or RANGE clause` ] ) | 2000 |
+| SQL:2003 | T612 | UNBOUNDED | window frame specification | 
 
+
+T431 Elementary OLAP operations
+T491 Grouping ID function
+T611 Basic window functions
+T612 Extended window functions
 
 #References
 
