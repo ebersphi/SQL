@@ -1,16 +1,28 @@
 
 
-| Feature | Keyword | Implementation | MSSQL | Oracle | PGSQL | MySql | MariaDb |
-| :---: | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-|   | APPROX_COUNT_DISTINCT | approx_count_distinct(expression) -> bigint  | 2019 |  |  |  |  |
-|   | GROUPING | grouping( <column_expression> ) -> 0 ou 1 | 2000 |
-|   | GROUPING_ID | grouping_id(<column_expression> [ , ...n ] ) -> int | 2000 |
-|   | OVER | OVER ( [ `PARTITION BY clause` ] [ `ORDER BY clause` ] [ `ROW or RANGE clause` ] ) | 2000 |
+| Standard | Feature | Keyword | Implementation | MSSQL | Oracle | PGSQL | MySql | MariaDb |
+| :--- | :---: | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| |   | APPROX_COUNT_DISTINCT | approx_count_distinct(expression) -> bigint  | 2019 |  |  |  |  |
+| SQL:1999 | 7.10.4 | GROUPING | grouping( <column_expression> ) -> 0 ou 1 | 2000 |
+| SQL:2003 | F.2.14 | GROUPING_ID | grouping_id(<column_expression> [ , ...n ] ) -> int | 2000 |
+| SQL:2003 | 10.9  | OVER | OVER ( [ `PARTITION BY clause` ] [ `ORDER BY clause` ] [ `ROW or RANGE clause` ] ) | 2000 |
+| SQL:2003 | 10.9.6  | UNBOUNDED | window frame specification | 
 
 
+#References
 
+| Standard | ISO/IEC Document | Main feature introduced |
+| :--- | :--- | :--- |
+| SQL:1999	ISO/IEC 9075-2:1999	| Grouping sets, ROLLUP, CUBE |
+|SQL:2003	ISO/IEC 9075-2:2003 | window (analytic) functions |
+|SQL:2003	ISO/IEC 9075-2:2003 | window frame defintions |
 
+Standard edition: SQL:2003
+Document: ISO/IEC 9075-2:2003 (SQL/Foundation)
+Clause: 10.9.6
 
+`window frame bound` ::= 
+    UNBOUNDED PRECEDING | UNBOUNDED FOLLOWING | `unsigned value specification` PRECEDING | `unsigned value specification` FOLLOWING | CURRENT ROW
 
 
 MSSQL : `offset_fetch` ::= {\
